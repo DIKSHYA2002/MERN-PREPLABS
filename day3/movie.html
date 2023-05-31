@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Site</title>
+    
+</head>
+<style>
+   
+    h1{
+        text-align: center;
+       border-bottom: 5px rgb(255, 249, 249) solid;
+        margin: 1rem;
+        padding: 1rem;
+        color: rgb(0, 0, 0);
+    }
+    h1 span{
+        color: rgb(233, 16, 16);
+    }
+
+    .movielist{
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+            flex-direction: row;
+            justify-content: left;
+    
+          
+    }
+    .movie {
+       display: flex;
+       flex-direction: column;
+      background-color: rgb(13, 13, 13);
+      padding: 20px;
+      margin: 0.5rem;
+      border: 10px solid rgb(74, 171, 203);
+      border-radius: 0 40px 0 40px;
+      
+    }
+    
+    .movie img{
+        height: 50vh;
+        width: 30vh;
+        border: 5px red solid;
+    }
+    .movie-name
+    {
+   color: white;
+        font-size: 1rem;
+        text-align: center;
+        text-transform: uppercase;
+        font-weight: 800;
+    
+    }
+    .movie-rating{
+        text-align: center;
+    }
+
+        .director{
+            text-align: right;
+            color: grey;
+              
+        }
+        .cast{
+            color: lightblue;
+        }
+        .date{
+         
+            font-size: 15px;
+            text-align: center;
+            background-color: rgb(255, 208, 0);
+            color: black;
+         position: relative;
+         top: -8%;
+           font-weight: 800;
+           padding: 0.5rem;
+           width: 50%;
+           left: 20%;
+            font-size: 20px;
+            border-radius: 5px;
+        }
+</style>
+<body>
+    <h1>
+        Recommended <span>Movies!</span>
+    </h1>
+    <div class="movielist" id="movie-list">
+    </div>
+    
+</body>
+<script src="movie.js"></script>
+</html>
