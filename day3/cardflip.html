@@ -3,33 +3,59 @@
   <head>
     <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale = 1">
     <title>CSS Card Flip</title>
+    
     <style>
     body{
-    background: #3C5377;
+    background: #ffffff;
     }
+ *{
+  margin: 0;
+ }
+    .navbar{
+      margin: 0;
+      padding: 0;
+     position: sticky;
+     top: 0;
+     z-index: 1;
+     color: white;
+     font-style: italic;
+     
+    }
+.navbar ul{
+  position: sticky;
+  top: 0%;
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  justify-content: space-evenly;
+  background-color: rgb(33, 176, 33);
+padding: 20px;
+font-size: 1.5rem;
+position: sticky;
 
-/* THE MAINCONTAINER HOLDS EVERYTHING */
+margin: 0;
+}
 .maincontainer{
-  position: absolute;
-  width: 250px;
-  height: 320px;
+  height: 100vh;
   background: none;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+ display: flex;
+ flex-wrap: wrap;
+ flex-direction: row;
+ gap: 1rem;
+ justify-content: space-evenly;
 
 }
-
 /* THE CARD HOLDS THE FRONT AND BACK FACES */
 .thecard{
   position: relative;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 100%;
+  width: 40%;
+  height: 40%;
   border-radius: 10px;
   transform-style: preserve-3d;
   transition: all 0.8s ease;
+  margin: 1rem;
 }
 
 /* THE PSUEDO CLASS CONTROLS THE FLIP ON MOUSEOVER AND MOUSEOUT */
@@ -44,11 +70,18 @@
   left: 0;
   width: 100%;
   height: 100%;
-  border-radius: 10px;
+  border-radius: 20px;
   backface-visibility: hidden;
   overflow: hidden;
-  background: #ffc728;
+  z-index: 1;
   color: #000;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  text-align: center;
+
+
+  padding: 1rem;
 }
 
 /* THE BACK FACE OF THE CARD, WHICH SHOWS ON MOUSEOVER */
@@ -65,38 +98,56 @@
   color: #333;
   text-align: center;
   transform: rotateY(180deg);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  background-color: black;
+  padding: 1rem;
+  color: white;
+}
+.theback .movie-name{
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+.theback .about{
+  font-style: italic;
+}
+.thefront .movie-name{
+ position: relative;
+ top: -10%;
+ font-size: 2rem;
+ background-color: #ffffff62;
+ font-style: italic;
+ font-weight: 600;
+}
+img{
+  width: 100%;
+  height: 25rem;
+  object-fit: cover;  
+  z-index: -1;
+  border-radius: 20px;
+}
+.movie-image{
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
 }
 
-
-/*This block (starts here) is merely styling for the flip card, and is NOT an essential part of the flip code */
-.thefront h1, .theback h1{
-  font-family: 'zilla slab', sans-serif;
-  padding: 30px;
-  font-weight: bold;
-  font-size: 24px;
-  text-align: center;
-}
-
-.thefront p, .theback p{
-  font-family: 'zilla slab', sans-serif;
-  padding: 30px;
-  font-weight: normal;
-  font-size: 12px;
-  text-align: center;
-}
-/*This block (ends here) is merely styling for the flip card, and is NOT an essential part of the flip code */
     </style>
   </head>
   <body>
-    <div class="maincontainer">
-
-      <div class="thecard">
-
-        <div class="thefront"><h1>Front of Card</h1><p>This is the front of the card. It contains important information. Please see overleaf for more details.</p></div>
-
-        <div class="theback"><h1>Back of Card</h1><p>Your use of this site is subject to the terms and conditions governing this and all transactions.</p>
-        <button>Submit</button></div>
-      </div>
+    <div class="navbar">
+      <ul>
+        <li>Home</li>
+        <li>Recipes</li>
+        <li>Shop</li>
+      </ul>
     </div>
+    <div class="maincontainer">
+   </div>
+  
+    <script src="cardflip.js"></script>
   </body>
+ 
 </html>

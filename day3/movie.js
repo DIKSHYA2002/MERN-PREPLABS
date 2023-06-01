@@ -33,8 +33,6 @@ const data = [
 ]
 
 data.map((movie)=>{
-    // let carddiv = document.createElement('div');
-    // carddiv.className = 'card';
 
     const movieListClass = document.getElementById('movie-list');
     let div = document.createElement('div');
