@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Carlito:wght@400;700&display=swap" rel="stylesheet">
+
+</head>
+<style>
+     *{
+        font-family:'Carlito', sans-serif;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+       
+}
+body{
+    background-color:rgb(45, 42, 47) ;
+}
+    .register{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 1.2rem;
+    background-color: rgb(45, 42, 47);
+    }
+    .form{
+        margin: auto;
+        padding: 3rem;
+        background-color: rgb(55, 51, 57);
+        border-radius: 20px;
+        color: white;
+        text-transform: uppercase;
+
+    }
+    button{
+    font-size: 1rem;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    color: white;
+    background-color:rgb(67, 63, 69) ;
+    border-radius: 20px;
+ padding: 1.5rem;
+ margin: 1rem;
+    
+   }
+   input[type="text"]:focus{
+       outline: none;
+       color: white;
+      
+    }
+    input[type="text"]{
+        border: none;
+        border-bottom: 1px rgb(255, 255, 255) solid;
+        background-color: transparent;
+        caret-color: antiquewhite;
+        color: white;
+        font-size: 1.2rem;
+        padding: 1rem;
+       
+    }
+    ::-ms-reveal {
+  filter: invert(100%);
+    }
+  
+
+    .email,#logemail,#logpassword,.buttons , label ,button , input[type="reset"]{
+        padding: 1rem;
+       
+      
+    }
+    .navbar{
+    display: flex;
+    flex-direction: row;
+   justify-content: space-between;
+   background-color: rgb(39, 37, 40);
+   margin-bottom: 1rem;
+   align-items: center;
+}
+h2{
+    color: white;
+    font-size: 2rem;
+    padding: 1rem;
+}
+a{
+    color: white;
+    margin: 2rem;
+  
+    margin-top: 2rem;
+    font-size: 1.5rem;
+    text-decoration: none;
+    font-weight: 800;
+}
+
+</style>
+<body>
+    <div class="navbar">
+        <div class="logo"><h2>🦋Social</h2></div>
+        <div class="linkg">
+           <a href="./posts.html">➕All POSTS</a>
+        </div>
+    </div>
+    <div class="register">
+        
+        <div class="form">
+            <h1>➕Add posts</h1>
+           <div class="user_name">
+            <label for="">User Name</label>
+            <input type="text" name="" id="">
+           </div>
+           <div class="location">
+            <label for="">location</label>
+            <input type="text" name="" id="">
+           </div>
+           <div class="post-image">
+            <label for="">add image:</label>
+            <input type="text" name="" id="">
+           </div>
+           <div class="caption">
+            <label for="">add caption:</label>
+            <input type="text" name="" id="">
+           </div>
+           <div class="button">
+            <button type="submit">POST</button>
+           </div>
+        </div>
+       
+    </div>
+    <script src="addproduct.js"></script>
+    
+</body>
+</html>

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Carlito:wght@400;700&display=swap" rel="stylesheet">
+<style>
+    *{
+        font-family:'Carlito', sans-serif;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+     
+}
+
+.register{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 1.2rem;
+    background-color: rgb(45, 42, 47);
+    }
+    .form{
+        margin: auto;
+        padding: 3rem;
+       
+        background-color: rgb(55, 51, 57);
+        border-radius: 20px;
+        color: white;
+  
+    }
+    input[type="email"]:focus,input[type="password"]:focus{
+       outline: none;
+       color: white;
+      
+    }
+    input[type="email"],input[type="password"]{
+        border: none;
+        border-bottom: 1px rgb(255, 255, 255) solid;
+        background-color: transparent;
+        caret-color: antiquewhite;
+        color: white;
+        font-size: 1.2rem;
+    }
+  
+
+    .email,#logemail,#logpassword,.buttons , label ,button , input[type="reset"]{
+        padding: 1rem;
+       
+      
+    }
+    .buttons{
+        display: flex;
+        flex-direction: row;
+       justify-content: space-around;
+       margin-top: 1rem;
+    }
+   button, a{
+    font-size: 1rem;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    color: white;
+    background-color:rgb(67, 63, 69) ;
+    border-radius: 20px;
+
+    
+   }
+   a{
+    padding: 1rem;
+    text-decoration: none;
+
+   }
+   ::-ms-reveal {
+  filter: invert(100%);
+}
+
+
+</style>
+
+</head>
+
+<body>
+    <div class="register">
+        
+        <div class="form">
+            <h1>Login</h1>
+            <div class="email">
+                <label for="">Email</label>
+                <input type="email" name="" id="logemail">
+         
+            </div>
+            <div class="password">
+                <label for="">Password</label>
+                <input type="password" name="" id="logpassword">    
+            </div>
+            
+            <div class="buttons">
+                <button id="login">Submit</button> 
+                <a href="./register.html" class="toregister">Register</a>
+            </div>
+        </div>
+       
+    </div>
+    <script src="log.js"></script>
+</body>
+</html>

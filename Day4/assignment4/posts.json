@@ -1,0 +1,19 @@
+{
+    "posts":
+    [
+        {
+            "createdBy":"pragnya@gmail.com",
+            "postedTime":"2:30pm",
+            "imageLink":"",
+            "caption":"Enjoying the sunrays",
+            "location" :"newYork"
+        },
+        {
+            "createdBy":"dikshya@gmail.com",
+            "postedTime":"3:30pm",
+            "imageLink":"",
+            "caption":"Bad Attitude Sad Attitude",
+            "location" :"newYork"
+        }
+    ]
+}
