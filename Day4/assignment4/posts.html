@@ -11,6 +11,7 @@
         padding: 0;
         margin: 0;
         box-sizing: border-box;
+        overflow-x: hidden;
 
     }
    body{
@@ -22,8 +23,7 @@
         display: flex;
  flex-direction: column;
  justify-content: space-evenly;
- gap: 5rem;
-
+ gap: 3rem;
     }
     .post{
         background-color: rgb(55, 51, 57);
@@ -90,104 +90,49 @@ h1{
    background-color: rgb(55, 51, 57);
    margin-bottom: 1rem;
 }
+.buttonsAll{
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    margin: 4px;
+}
+.buttonsAll button{
+    padding: 0.5rem;
+    font-size: 1.5rem;
+    background-color: transparent;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
 h2{
     color: white;
     font-size: 2rem;
     padding: 1rem;
 }
-h3{
-
+.linkg a{
+    color: white;
+    margin: 2rem;
+  
+    margin-top: 2rem;
+    font-size: 1.5rem;
+    text-decoration: none;
+    font-weight: 800;
 }
+
 </style>
 
 <body>
     <div class="navbar">
         <div class="logo"><h2>🦋Social</h2></div>
         <div class="linkg">
-           <a href="./AddProduct.html">Add Posts</a>
+            <a href="./AddProduct.html">➕ADD POSTS</a>
+            <a href="./login.html" class="loginstatus">LOGIN</a>
+
         </div>
     </div>
     <div class="posts">
-        <div class="post">
-            <div class="profilePart">
-                <div class="upper-profile">
-                    <img src="https://th.bing.com/th/id/OIP.gxCrcJ9wcnuS-hppF4l8ggHaHa?w=189&h=189&c=7&r=0&o=5&dpr=1.1&pid=1.7" alt="">
-                    <div class="user_name">
-                       <a>jane_doe123</a>
-                    </div>
-                </div>
-                <div class="location">🌍New York Seattle</div>
-    
-            </div>
-            <div class="post-image">
-                <img src="https://th.bing.com/th/id/OIP.P0QNPoDkCm_QcuqERna3OgHaNJ?w=186&h=331&c=7&r=0&o=5&dpr=1.1&pid=1.7" alt="">
-            </div>
-            <div class="activity">
-                <div class="likes">
-                    ❤️
-                </div>
-                <div class="comments">
-                    💬
-                </div>
-                <div class="share">
-                    📩
-                </div>
-            </div>
-            <div class="caption">
-                <span class="user_name">jane_doe123</span>
-                <span id="caption">A cup of coffee makes day survivable!</span>
-            </div>
+  
         </div>
-        <div class="post">
-            <div class="profilePart">
-                <div class="upper-profile">
-                    <img src="https://th.bing.com/th/id/OIP.gxCrcJ9wcnuS-hppF4l8ggHaHa?w=189&h=189&c=7&r=0&o=5&dpr=1.1&pid=1.7" alt="">
-                    <div class="user_name">
-                       <a>jane_doe123</a>
-                    </div>
-                </div>
-                <div class="location">New York Seattle</div>
-    
-            </div>
-            <div class="post-image">
-                <img src="https://th.bing.com/th/id/OIP.P0QNPoDkCm_QcuqERna3OgHaNJ?w=186&h=331&c=7&r=0&o=5&dpr=1.1&pid=1.7" alt="">
-            </div>
-            <div class="activity">
-                <div class="likes">
-                    ❤️
-                </div>
-                <div class="comments">
-                    💬
-                </div>
-                <div class="share">
-                    📩
-                </div>
-            </div>
-            <div class="caption">
-                <div class="user_name">jane_doe123</div>
-                <span id="caption">A cup of coffee makes day survivable!</span>
-            </div>
-        </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        </div>
-       
-       
+     <script src="./posts.js"></script> 
 </body>
 </html>

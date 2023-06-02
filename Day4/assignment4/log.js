@@ -7,10 +7,11 @@ button2.addEventListener("click",()=>{
     })
     .then((res)=>res.json())
     .then((login)=>{
-        console.log(login);
         const user=login.find((item)=>item.email===email1.value && item.password===password1.value);
         console.log(user);
         if(user){
+            console.log(user);
+             localStorage.setItem("token", JSON.stringify(Date.now()));
             window.location.href="./posts.html"
         }
         else{

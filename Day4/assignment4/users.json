@@ -30,5 +30,28 @@
       "password": "123456dikshya",
       "id": 6
     }
+  ],
+  "posts": [
+    {
+      "id": 2,
+      "createdBy": "dikshya_123",
+      "imageLink": "https://th.bing.com/th/id/OIP.P0QNPoDkCm_QcuqERna3OgHaNJ?w=186&h=331&c=7&r=0&o=5&dpr=1.1&pid=1.7",
+      "caption": "Bad Attitude Sad Attitude",
+      "location": "bhubaneswar odisha"
+    },
+    {
+      "id": 3,
+      "createdBy": "abhilipsa_dhal123",
+      "location": "bhadrak",
+      "imageLink": "https://th.bing.com/th/id/OIP.kmFC7BDpQhjUSrIPj4OSCAHaE6?pid=ImgDet&rs=1",
+      "caption": "sunset is everything"
+    },
+    {
+      "id": 1685686026740,
+      "createdBy": "dikshya",
+      "location": "bbsr",
+      "imageLink": "https://th.bing.com/th/id/OIP.kmFC7BDpQhjUSrIPj4OSCAHaE6?pid=ImgDet&rs=1",
+      "caption": "hello"
+    }
   ]
 }
