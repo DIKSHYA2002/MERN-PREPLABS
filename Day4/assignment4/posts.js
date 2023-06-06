@@ -92,9 +92,6 @@ fetch("http://localhost:5501/posts", {
         })
     }
     );
-
-
-
 const id = JSON.parse(localStorage.getItem("token"));
 if(id)
 {
